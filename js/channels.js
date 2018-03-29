@@ -46,3 +46,7 @@ var octoberfest = {
     expiresIn: 60,
     messageCount: 321
 };
+
+/* array */
+
+var channels = ["yummy", "sevencontinents", "killerapp", "firstpersononmars", "octoberfest"];
