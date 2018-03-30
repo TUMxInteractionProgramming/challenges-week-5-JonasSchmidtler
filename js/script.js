@@ -193,3 +193,13 @@ function createChannelElement(channelObject) {
     // return the complete channel
     return channel;
 }
+
+/* compare functions */
+
+/**function compareNew (channels){
+   for (i = 0; i < channels.length; i++)
+        {
+        if (i.createdOn...
+        }
+} 
+*/

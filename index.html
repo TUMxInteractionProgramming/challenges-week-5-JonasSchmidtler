@@ -21,6 +21,7 @@
 
     <!-- embed external JavaScript file for app interaction -->
     <script src="js/script.js"></script>
+    
 
 </head>
 
@@ -175,7 +176,17 @@
             <!-- #7 #icns #smile replacing icons -->
             <i class="fa fa-smile-o"></i>
         </button>
-        <div id="emojis">&#x1F601; &#x1F602; &#x1F603; &#x1F604; &#x1F605; &#x1F606; &#x1F607;</div>
+        <div id="emojis">
+          
+            <script src="emojis-list.js" type="text/javascript" charset="utf-8"></script>
+  
+            <script>
+   var emojis = require('emojis-list')
+    console.log(emojis[0])
+    document.getElementById("emojis").innerHTML = emojis;
+  </script>
+        
+        </div>
         <!-- #8 create a new #input #element which accepts text and has a #prefill as well as a character #imit.
                For #real, it also gets an id -->
         <input type="text" placeholder="Message..." maxlength="140" id="message">
