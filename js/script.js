@@ -1,3 +1,4 @@
+
 /* start the external action and say hello */
 console.log("App is alive");
 
@@ -148,13 +149,12 @@ function createMessageElement(messageObject) {
 function listChannels() {
     // #8 #channel #onload
     //$('#channels ul').append("<li>New Channel</li>")
-
-    // #8 #channels make five #new channels
-    $('#channels ul').append(createChannelElement(yummy));
-    $('#channels ul').append(createChannelElement(sevencontinents));
-    $('#channels ul').append(createChannelElement(killerapp));
-    $('#channels ul').append(createChannelElement(firstpersononmars));
-    $('#channels ul').append(createChannelElement(octoberfest));
+    
+    for (i = 0; i < channels.length; i++)
+        {
+            console.log('channel array is working', channels[i]);
+        $('#channels ul').append(createChannelElement(channels[i]));
+        }
 }
 
 /**

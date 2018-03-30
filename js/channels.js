@@ -49,4 +49,4 @@ var octoberfest = {
 
 /* array */
 
-var channels = ["yummy", "sevencontinents", "killerapp", "firstpersononmars", "octoberfest"];
+var channels = [yummy, sevencontinents, killerapp, firstpersononmars, octoberfest];
